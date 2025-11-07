@@ -1,28 +1,84 @@
 <main class="container mt-4">
-    <% if (title == 'Home') { %>
-        <h1>Welcome to my site</h1>
-        <p>I have done many projects in many different areas in life.</p>
-        <p>I hope you like this website and enjoy your time.</p>
-        <p>Thank you for checking out my Website.</p>
-        <%
-    } else if (title == 'About') { %>
+  <% if (title == 'Home') { %>
+    <!-- MAIN CONTENT -->
+    <div class="container py-5" id="home">
+      <div class="text-center mb-5">
+        <h1 class="fw-bold">Welcome to my site</h1>
+        <p class="text-muted mb-0">
+          I have done many projects in many different areas in life. 
+          I hope you like this website and enjoy your time. 
+          Please choose from the following.
+        </p>
+      </div>
+
+      <!-- cards row -->
+      <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+        <!-- About Me card -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">About Me</h4>
+            </div>
+            <div class="card-body">
+              <a href="#about" class="w-100 btn btn-lg btn-primary">About Me</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects card -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Projects</h4>
+            </div>
+            <div class="card-body">
+              <a href="#projects" class="w-100 btn btn-lg btn-primary">Projects</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Me card -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Contact Me</h4>
+            </div>
+            <div class="card-body">
+              <a href="#contact" class="w-100 btn btn-lg btn-primary">Contact Me</a>
+            </div>
+          </div>
+        </div>
+
+        </div>
+        <div class="container py-5" id="home">
+            <div class="text-center mb-5">
+                <h1 class="fw-bold">Thank you for checking out my Website.</h1>
+      </div>
+    </div>
+
+  <% } else if (title == 'About') { %>
+    <div class="container py-5" id="About">
+      <div class="text-center mb-5">
         <h1>About me</h1>
         <p>Name: Ghayas Sher</p>
         <p>Age: 21 Years Old</p>
         <p>University: Ontario Tech University</p>
         <p>Program: Networking and IT security</p>
         <p>Hobbies: Soccer, Gym, Reading, Road Trips</p>
-        <%
-    } else if (title == 'Projects') { %>
+  <% } else if (title == 'Projects') { %>
+    <div class="container py-5" id="Projects">
+      <div class="text-center mb-5">
         <h1>Here I will list some projects I have done.</h1>
         <p>Projects:</p>
-        <p>1. Electric Go Kart </p>
-        <p>2. Hydraulic Arm </p>
-        <p>3. Personal Website </p>
-        <%
-    } else if (title == 'Contact') { %>
+        <p>1. Electric Go Kart</p>
+        <p>2. Hydraulic Arm</p>
+        <p>3. Personal Website</p>
+  <% } else if (title == 'Contact') { %>
+    <div class="container py-5" id="Contact">
+      <div class="text-center mb-5">
         <h1>Contact</h1>
-        <p> Email / form / whatever they asked for. </p>
-        <%    
-    } %> 
+        <p>Email / form / whatever they asked for.</p>
+  <% } %>
 </main>
+
+
