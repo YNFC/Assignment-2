@@ -92,10 +92,52 @@
         <p>3. Personal Website</p>
   <% } else if (title == 'Contact') { %>
     <div class="container py-5" id="Contact">
-      <div class="text-center mb-5">
-        <h1>Contact</h1>
-        <p>Email / form / whatever they asked for.</p>
+        <main class="container mt-4 mb-5">
+            <div class="text-center mb-5"></div>
+            <h1 class="mb-4">Contact Me</h1>
+
+            <!--  Contact me Page Setup -->
+            <form class="row g-3 needs-validation" action="/contact" method="post" novalidate>
+                <!-- First name box -->
+                <div class="col-md-4">
+                    <label for="firstName" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="firstName" required>
+                </div>
+
+                <!-- last name box -->
+                <div class="col-md-4">
+                    <label for="lastName" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="lastName" required>
+                </div>
+
+                <!-- email box -->
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" required>
+                    <div class="invalid-feedback">
+                        INVALID EMAIL! PLEASE PROVIDE A VALID EMAIL!
+                    </div>
+                </div>
+
+                <!-- message box -->
+                <div class="col-md-12">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                    <div class="invalid-feedback">
+                        Please enter a message.
+                    </div>
+                </div>
+
+                <!-- submit box -->
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+            </form>
+        </main>
   <% } %>
 </main>
+
+
+
 
 
