@@ -1,3 +1,7 @@
+ <!-- this is the top of the page for navigating thru them all.
+  used the bootstrap classes like navbar and navbar-dark and bg-dark 
+  to make the bar dark and also used ejs to highlight and make the 
+  current page on the navbar light up/ be active. -->  
    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="/">INFR3120</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -7,6 +11,8 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ms-auto">
       <li class="nav-item">
+        <!-- this is the home section for the navbar to click on it and also add
+         the font awesome icons and enlarge them-->
         <% if (title == "Home") {%>
         <a class="nav-link active" aria-current="page" href="/home" ><i class="fa-solid fa-lg fa-house"></i> Home</a>
         <% } else { %>
@@ -14,6 +20,8 @@
         <%} %>
       </li>
       <li class="nav-item">
+        <!-- this is the about me section for the navbar to click on it and also add
+         the font awesome icons and enlarge them-->
         <% if (title == "About") {%>
         <a class="nav-link active" aria-current="page" href="/about"><i class="fa-solid fa-lg fa-circle-info"></i> About</a>
         <% } else { %>
@@ -21,6 +29,8 @@
         <%} %>
       </li>
       <li class="nav-item">
+        <!-- this is the projects section for the navbar to click on it and also add
+         the font awesome icons and enlarge them-->
         <% if (title == "Projects") {%>
         <a class="nav-link active" aria-current="page" href="/projects" ><i class="fa-solid fa-lg fa-bars-progress"></i> Projects</a>
         <% } else { %>
@@ -28,6 +38,8 @@
         <%} %>
       </li>
       <li class="nav-item">
+        <!-- this is the contact me section for the navbar to click on it and also add
+         the font awesome icons and enlarge them-->
         <% if (title == "Contact") {%>
         <a class="nav-link active" aria-current="page" href="/contact" ><i class="fa-solid fa-lg fa-phone"></i> Contact</a>
         <% } else { %>
@@ -36,3 +48,4 @@
       </li>
   </div>
 </nav>
+ <!--used this code from the lectures and added little icons from the font awesome page.-->

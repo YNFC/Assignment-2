@@ -30,3 +30,5 @@ Model --> to connect our logic
 view --> Pages
 controller -- the logic behind our routes
 */
+
+/* did this mainly from the lecture recordings*/
